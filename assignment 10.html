@@ -1,0 +1,64 @@
+<DOCTYPE! html>
+    <html>
+
+    <head>
+        <title>contact form</title>
+        <style>
+            /*Add some basic styling to make the form look decent*/
+            form {
+                width: 500px;
+                margin-left: 40px auto;
+
+            }
+
+            label {
+                display: black;
+                margin-bottom: 10px;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid crimson;
+                border-radius: 5px;
+            }
+
+            fieldset {
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.1);
+            }
+
+            textarea {
+                resize: vertical;
+            }
+
+            button[type="submit"]:hover {
+                background-color: #ccc;
+             
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="/submit" method="post">
+
+            <fieldset>
+                <legend><h2>Mail Form</h2></legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </fieldset>
+        </form>
+    </body>
+
+    </html>
